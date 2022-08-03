@@ -9,16 +9,7 @@ import Foundation
 import UIKit
 
 struct User {
-    var name: String
-    var password: String
-    var film: String
-    var filmImage: UIImage
-    var tvSeries: String
-    var releaseDate: Int
+    let name: String
+    let password: String
 }
 
-extension User {
-    static func getInfoList() -> [User] {
-        
-    }
-}
