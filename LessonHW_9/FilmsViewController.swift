@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstScreen: UIViewController {
+class FilmsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
