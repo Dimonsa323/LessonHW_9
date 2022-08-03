@@ -21,9 +21,7 @@ class FilmsPresenter {
 
 extension FilmsPresenter: FilmsPresenterProtocol {
     func showTVSeriesVC() {
-        let vc = TVSeriesVC()
-        vc.
+        print()
+    
     }
-    
-    
 }
