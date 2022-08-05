@@ -13,7 +13,7 @@
 		140A9D2E2899886B004EBE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140A9D2C2899886B004EBE74 /* LaunchScreen.storyboard */; };
 		C3EF70CF289995D300023B56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF70CE289995D300023B56 /* User.swift */; };
 		C3EF70D82899C77A00023B56 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF70D62899C77A00023B56 /* CreateAccountVC.swift */; };
-		C3EF70D92899C77A00023B56 /* CreateAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EF70D72899C77A00023B56 /* CreateAccount.xib */; };
+		C3EF70D92899C77A00023B56 /* CreateAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EF70D72899C77A00023B56 /* CreateAccountVC.xib */; };
 		C3EF70DB2899C7DD00023B56 /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF70DA2899C7DD00023B56 /* FirstScreenPresenter.swift */; };
 		C3EF70DD2899C8D700023B56 /* CreateAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF70DC2899C8D700023B56 /* CreateAccountPresenter.swift */; };
 		C3EF70E02899CEE500023B56 /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EF70DE2899CEE500023B56 /* FirstScreenVC.swift */; };
@@ -29,7 +29,7 @@
 		140A9D2F2899886B004EBE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3EF70CE289995D300023B56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C3EF70D62899C77A00023B56 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
-		C3EF70D72899C77A00023B56 /* CreateAccount.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccount.xib; sourceTree = "<group>"; };
+		C3EF70D72899C77A00023B56 /* CreateAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountVC.xib; sourceTree = "<group>"; };
 		C3EF70DA2899C7DD00023B56 /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
 		C3EF70DC2899C8D700023B56 /* CreateAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountPresenter.swift; sourceTree = "<group>"; };
 		C3EF70DE2899CEE500023B56 /* FirstScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVC.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C3EF70D62899C77A00023B56 /* CreateAccountVC.swift */,
-				C3EF70D72899C77A00023B56 /* CreateAccount.xib */,
+				C3EF70D72899C77A00023B56 /* CreateAccountVC.xib */,
 				C3EF70DC2899C8D700023B56 /* CreateAccountPresenter.swift */,
 			);
 			path = CreateAcauntVC;
@@ -197,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140A9D2E2899886B004EBE74 /* LaunchScreen.storyboard in Resources */,
-				C3EF70D92899C77A00023B56 /* CreateAccount.xib in Resources */,
+				C3EF70D92899C77A00023B56 /* CreateAccountVC.xib in Resources */,
 				140A9D2B2899886B004EBE74 /* Assets.xcassets in Resources */,
 				C3EF70E12899CEE500023B56 /* FirstScreenVC.xib in Resources */,
 			);

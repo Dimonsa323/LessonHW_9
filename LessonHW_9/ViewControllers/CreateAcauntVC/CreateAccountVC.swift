@@ -11,13 +11,11 @@ import UIKit
 class CreateAccountVC: UIViewController {
 
     //MARK: - IBOutlets
-   
-  
-   
+
+    @IBOutlet weak var createNewUserButton: UIButton!
     
-  
-    @IBOutlet weak var createUserButton: UIButton!
-    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     private let presenter: CreatAccountPresenterProtocol
      
@@ -30,21 +28,59 @@ class CreateAccountVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: - Action
+    
+    @IBAction func enterNameTextField() {
+        examinationNameText()
     }
-    */
+    @IBAction func enterPasswordTextField(_ sender: Any) {
+        examinationPasswordText()
+    }
+    @IBAction func saveInfoButton() {
+    show
+    }
+}
 
+    //MARK: - Private Extention
+
+extension CreateAccountVC {
+    func examinationNameText() {
+        guard let inputText = nameTextField.text, !inputText.isEmpty else {
+            showAlert(with: "Oh", and: "Text ield is empty")
+            return
+        }
+        guard let _ = Double(inputText) else {
+            showAlert(with: "No", and: "Wrong format")
+            return
+        }
+        nameTextField.text = ""
+    }
+    
+    func examinationPasswordText() {
+        guard let inputText = passwordTextField.text, !inputText.isEmpty else {
+            showAlert(with: "Error", and: "Text ield is empty")
+            return
+        }
+        passwordTextField.text = ""
+    }
+}
+
+//MARK: - UIAlertController
+
+extension CreateAccountVC {
+    func showAlert(with title: String, and messege: String) {
+        let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.nameTextField.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert,animated: true)
+    }
 }

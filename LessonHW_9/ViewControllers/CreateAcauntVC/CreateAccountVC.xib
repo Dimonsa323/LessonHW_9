@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAcaunt" customModule="LessonHW_9" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountVC" customModule="LessonHW_9" customModuleProvider="target">
             <connections>
+                <outlet property="createNewUserButton" destination="Anu-rE-sPh" id="2hB-4z-zza"/>
+                <outlet property="nameTextField" destination="bhH-nY-CMN" id="WJY-wI-7SH"/>
+                <outlet property="passwordTextField" destination="yJT-Ip-6w3" id="F8y-ld-3EW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,6 +31,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="enterNameTextField" destination="-1" eventType="editingDidEnd" id="5wD-Vk-zcb"/>
+                            </connections>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yJT-Ip-6w3">
                             <rect key="frame" x="0.0" y="76" width="150" height="34"/>
@@ -36,6 +42,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="enterPasswordTextField:" destination="-1" eventType="editingDidEnd" id="5NU-Ne-9sq"/>
+                            </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anu-rE-sPh">
                             <rect key="frame" x="0.0" y="152" width="150" height="31"/>
@@ -44,6 +53,9 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            <connections>
+                                <action selector="saveInfoButton" destination="-1" eventType="touchUpInside" id="kQd-la-kPq"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

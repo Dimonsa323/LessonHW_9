@@ -43,9 +43,10 @@ class FirstScreenVC: UIViewController {
 
 extension FirstScreenVC {
     @IBAction func createAccountBuuton(_ sender: Any) {
+        presenter.showCreateScreen(view: self)
     }
     @IBAction func nextScreenButtonAction(_ sender: Any) {
-        presenter.showCreateScreen(view: self)
+       
     }
 }
 

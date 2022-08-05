@@ -17,7 +17,11 @@ protocol FirstScreenPresenterProtocol {
 class FirstScreenPresenter {
     
     private var vc: FierstScreenProtocol!
-    
+    private var clasure: ((String) -> ())?
+//    init() {
+//        clasure { messege in
+//            self.
+//    }
     func set(vc: FierstScreenProtocol) {
         self.vc = vc
     }
